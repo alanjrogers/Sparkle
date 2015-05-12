@@ -531,11 +531,11 @@ NSLocalizedFailureReasonErrorKey:
 
     NSBundle *sparkleBundle = [NSBundle bundleWithIdentifier:SUBundleIdentifier];
 
-    NSDictionary* environ = [[NSProcessInfo processInfo] environment];
-    BOOL inSandbox = (nil != [environ objectForKey:@"APP_SANDBOX_CONTAINER_ID"]);
-    BOOL running10_7 = [SUHost isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){ 10, 7, 0 }];
-    BOOL useXPC = running10_7 && inSandbox &&
-                  [[NSFileManager defaultManager] fileExistsAtPath: [sparkleBundle.bundlePath stringByAppendingPathComponent:[NSString stringWithFormat:@"Contents/XPCServices/%@.xpc", @(SPARKLE_SANDBOX_SERVICE_NAME)]]];
+    //NSDictionary* environ = [[NSProcessInfo processInfo] environment];
+    //BOOL inSandbox = (nil != [environ objectForKey:@"APP_SANDBOX_CONTAINER_ID"]);
+    //BOOL running10_7 = [SUHost isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){ 10, 7, 0 }];
+    BOOL useXPC = YES; /*running10_7 && inSandbox &&
+                  [[NSFileManager defaultManager] fileExistsAtPath: [sparkleBundle.bundlePath stringByAppendingPathComponent:[NSString stringWithFormat:@"Contents/XPCServices/%@.xpc", @(SPARKLE_SANDBOX_SERVICE_NAME)]]]; */
     SULog(@"installWithToolAndRelaunch - using xpc=%d", useXPC);
 
 
