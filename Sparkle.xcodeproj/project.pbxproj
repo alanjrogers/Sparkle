@@ -1850,6 +1850,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp=none";
 			};
 			name = Debug;
 		};
