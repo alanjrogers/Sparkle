@@ -1850,7 +1850,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				OTHER_CODE_SIGN_FLAGS = "--timestamp=none";
 			};
 			name = Debug;
 		};
@@ -1868,6 +1867,7 @@
 			baseConfigurationReference = FA1941CF0D94A70100DD942E /* ConfigCommonDebug.xcconfig */;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp=none";
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
 					"-Wall",
