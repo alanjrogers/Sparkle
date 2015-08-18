@@ -1971,6 +1971,7 @@
 			baseConfigurationReference = 14F182601966202400D456EE /* ConfigSandboxServiceDebug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				OTHER_CODE_SIGN_FLAGS = "";
 			};
 			name = Debug;
 		};
